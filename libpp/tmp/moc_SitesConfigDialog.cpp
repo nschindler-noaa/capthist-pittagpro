@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'SitesConfigDialog.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'SitesConfigDialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.9.7. It"
+#error "This file was generated using the moc from 5.12.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -51,7 +51,7 @@ QT_MOC_LITERAL(7, 98, 21) // "checkApplyButtonState"
 static const uint qt_meta_data_SitesConfigDialog[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        6,   14, // methods
@@ -87,7 +87,7 @@ static const uint qt_meta_data_SitesConfigDialog[] = {
 void SitesConfigDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        SitesConfigDialog *_t = static_cast<SitesConfigDialog *>(_o);
+        auto *_t = static_cast<SitesConfigDialog *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->siteConfigChanged(); break;
@@ -101,7 +101,7 @@ void SitesConfigDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            typedef void (SitesConfigDialog::*_t)();
+            using _t = void (SitesConfigDialog::*)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&SitesConfigDialog::siteConfigChanged)) {
                 *result = 0;
                 return;
@@ -111,10 +111,14 @@ void SitesConfigDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
     Q_UNUSED(_a);
 }
 
-const QMetaObject SitesConfigDialog::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_SitesConfigDialog.data,
-      qt_meta_data_SitesConfigDialog,  qt_static_metacall, nullptr, nullptr}
-};
+QT_INIT_METAOBJECT const QMetaObject SitesConfigDialog::staticMetaObject = { {
+    &QDialog::staticMetaObject,
+    qt_meta_stringdata_SitesConfigDialog.data,
+    qt_meta_data_SitesConfigDialog,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *SitesConfigDialog::metaObject() const

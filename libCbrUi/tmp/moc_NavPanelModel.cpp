@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'NavPanelModel.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.7)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'NavPanelModel.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.9.7. It"
+#error "This file was generated using the moc from 5.12.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -50,7 +50,7 @@ QT_MOC_LITERAL(7, 78, 13) // "setItemActive"
 static const uint qt_meta_data_cbr__NavPanelModel[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
@@ -80,7 +80,7 @@ static const uint qt_meta_data_cbr__NavPanelModel[] = {
 void cbr::NavPanelModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        NavPanelModel *_t = static_cast<NavPanelModel *>(_o);
+        auto *_t = static_cast<NavPanelModel *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->currentItemChanged((*reinterpret_cast< NavPanelItem*(*)>(_a[1]))); break;
@@ -91,7 +91,7 @@ void cbr::NavPanelModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            typedef void (NavPanelModel::*_t)(NavPanelItem * );
+            using _t = void (NavPanelModel::*)(NavPanelItem * );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&NavPanelModel::currentItemChanged)) {
                 *result = 0;
                 return;
@@ -100,10 +100,14 @@ void cbr::NavPanelModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     }
 }
 
-const QMetaObject cbr::NavPanelModel::staticMetaObject = {
-    { &QAbstractItemModel::staticMetaObject, qt_meta_stringdata_cbr__NavPanelModel.data,
-      qt_meta_data_cbr__NavPanelModel,  qt_static_metacall, nullptr, nullptr}
-};
+QT_INIT_METAOBJECT const QMetaObject cbr::NavPanelModel::staticMetaObject = { {
+    &QAbstractItemModel::staticMetaObject,
+    qt_meta_stringdata_cbr__NavPanelModel.data,
+    qt_meta_data_cbr__NavPanelModel,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *cbr::NavPanelModel::metaObject() const

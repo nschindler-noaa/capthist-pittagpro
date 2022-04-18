@@ -30,7 +30,7 @@ CjsReport::CjsReport(const TaggingData& data, const vector<CjsEstimates*>& cjs) 
 void CjsReport::writeObject(ostream& os) const {
     unsigned int pop, per, occ;
     int row = 0;
- 
+
 
     RB_.insertLeft(row++, 0, "Cormack/Jolly-Seber Estimates");
     RB_.insertLeft(row++, 0, "(Cormack 1964, Jolly 1965, Seber 1965)");
@@ -137,7 +137,7 @@ void CjsReport::insertPopulationName(int row, int pop) const {
 void CjsReport::insertValues(int row, int col, double val, double var) const {
     int column = RB_.insertLeft(row, col, 2 + precision_, precision_, val);
     column = RB_.insertLeft(row, column, " (");
-    if (isnanf(var))
+    if (_isnanf(var))
         column = RB_.insertLeft(row, column, 2 + precision_, string(2 + precision_, '*'));
     else
         column = RB_.insertLeft(row, column, 2 + precision_, precision_, sqrt(var));

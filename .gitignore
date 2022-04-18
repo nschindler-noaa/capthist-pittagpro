@@ -7,7 +7,7 @@ ui_*.h
 moc_*.*
 rcc_*.*
 *.o
-
+*.exe
 Makefile.*
 logs
 

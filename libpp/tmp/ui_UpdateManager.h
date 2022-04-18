@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'UpdateManager.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.7
+** Created by: Qt User Interface Compiler version 5.12.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,9 +10,7 @@
 #define UI_UPDATEMANAGER_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
@@ -44,23 +42,23 @@ public:
     void setupUi(QDialog *UpdateManager)
     {
         if (UpdateManager->objectName().isEmpty())
-            UpdateManager->setObjectName(QStringLiteral("UpdateManager"));
+            UpdateManager->setObjectName(QString::fromUtf8("UpdateManager"));
         UpdateManager->resize(560, 295);
         vboxLayout = new QVBoxLayout(UpdateManager);
         vboxLayout->setSpacing(6);
         vboxLayout->setContentsMargins(11, 11, 11, 11);
-        vboxLayout->setObjectName(QStringLiteral("vboxLayout"));
+        vboxLayout->setObjectName(QString::fromUtf8("vboxLayout"));
         vboxLayout->setContentsMargins(11, 11, 11, 11);
         vboxLayout1 = new QVBoxLayout();
         vboxLayout1->setSpacing(6);
-        vboxLayout1->setObjectName(QStringLiteral("vboxLayout1"));
+        vboxLayout1->setObjectName(QString::fromUtf8("vboxLayout1"));
         vboxLayout1->setContentsMargins(0, 0, 0, 0);
         hboxLayout = new QHBoxLayout();
         hboxLayout->setSpacing(6);
-        hboxLayout->setObjectName(QStringLiteral("hboxLayout"));
+        hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
         hboxLayout->setContentsMargins(0, 0, 0, 0);
         pixmapLabel1 = new QLabel(UpdateManager);
-        pixmapLabel1->setObjectName(QStringLiteral("pixmapLabel1"));
+        pixmapLabel1->setObjectName(QString::fromUtf8("pixmapLabel1"));
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -73,9 +71,9 @@ public:
         hboxLayout->addWidget(pixmapLabel1);
 
         textLabel14 = new QLabel(UpdateManager);
-        textLabel14->setObjectName(QStringLiteral("textLabel14"));
+        textLabel14->setObjectName(QString::fromUtf8("textLabel14"));
         QFont font;
-        font.setFamily(QStringLiteral("Tahoma"));
+        font.setFamily(QString::fromUtf8("Tahoma"));
         font.setPointSize(18);
         font.setBold(false);
         font.setItalic(false);
@@ -91,16 +89,16 @@ public:
         vboxLayout1->addLayout(hboxLayout);
 
         updateTable = new QTableWidget(UpdateManager);
-        updateTable->setObjectName(QStringLiteral("updateTable"));
+        updateTable->setObjectName(QString::fromUtf8("updateTable"));
 
         vboxLayout1->addWidget(updateTable);
 
         hboxLayout1 = new QHBoxLayout();
         hboxLayout1->setSpacing(6);
-        hboxLayout1->setObjectName(QStringLiteral("hboxLayout1"));
+        hboxLayout1->setObjectName(QString::fromUtf8("hboxLayout1"));
         hboxLayout1->setContentsMargins(0, 0, 0, 0);
         progressBar = new QProgressBar(UpdateManager);
-        progressBar->setObjectName(QStringLiteral("progressBar"));
+        progressBar->setObjectName(QString::fromUtf8("progressBar"));
         progressBar->setValue(24);
 
         hboxLayout1->addWidget(progressBar);
@@ -110,17 +108,17 @@ public:
         hboxLayout1->addItem(spacerItem);
 
         updateButton = new QPushButton(UpdateManager);
-        updateButton->setObjectName(QStringLiteral("updateButton"));
+        updateButton->setObjectName(QString::fromUtf8("updateButton"));
 
         hboxLayout1->addWidget(updateButton);
 
         refeshButton = new QPushButton(UpdateManager);
-        refeshButton->setObjectName(QStringLiteral("refeshButton"));
+        refeshButton->setObjectName(QString::fromUtf8("refeshButton"));
 
         hboxLayout1->addWidget(refeshButton);
 
         doneButton = new QPushButton(UpdateManager);
-        doneButton->setObjectName(QStringLiteral("doneButton"));
+        doneButton->setObjectName(QString::fromUtf8("doneButton"));
 
         hboxLayout1->addWidget(doneButton);
 
@@ -139,14 +137,14 @@ public:
 
     void retranslateUi(QDialog *UpdateManager)
     {
-        UpdateManager->setWindowTitle(QApplication::translate("UpdateManager", "Update Manager", Q_NULLPTR));
+        UpdateManager->setWindowTitle(QApplication::translate("UpdateManager", "Update Manager", nullptr));
 #ifndef QT_NO_WHATSTHIS
-        UpdateManager->setWhatsThis(QApplication::translate("UpdateManager", "The update manager checks the current program and configuration versions against what is available on the Columbia Basin Research web site (www.cbr.washington.edu/paramest/pitpro). If a newer version is available, a check mark icon is displayed on the PitPro main page. If the sites configuration is out of date, the update manager allows for automatic update of the sites configuration file. Currently, the program can not be updated in this way, but the at least this provides notification that a newer version exists for download. Please visit the above site to download the latest version of the program.", Q_NULLPTR));
+        UpdateManager->setWhatsThis(QApplication::translate("UpdateManager", "The update manager checks the current program and configuration versions against what is available on the Columbia Basin Research web site (www.cbr.washington.edu/paramest/pitpro). If a newer version is available, a check mark icon is displayed on the PitPro main page. If the sites configuration is out of date, the update manager allows for automatic update of the sites configuration file. Currently, the program can not be updated in this way, but the at least this provides notification that a newer version exists for download. Please visit the above site to download the latest version of the program.", nullptr));
 #endif // QT_NO_WHATSTHIS
-        textLabel14->setText(QApplication::translate("UpdateManager", "PitPro Configuration Update Manager", Q_NULLPTR));
-        updateButton->setText(QApplication::translate("UpdateManager", "Update", Q_NULLPTR));
-        refeshButton->setText(QApplication::translate("UpdateManager", "Refesh", Q_NULLPTR));
-        doneButton->setText(QApplication::translate("UpdateManager", "Done", Q_NULLPTR));
+        textLabel14->setText(QApplication::translate("UpdateManager", "PitPro Configuration Update Manager", nullptr));
+        updateButton->setText(QApplication::translate("UpdateManager", "Update", nullptr));
+        refeshButton->setText(QApplication::translate("UpdateManager", "Refesh", nullptr));
+        doneButton->setText(QApplication::translate("UpdateManager", "Done", nullptr));
     } // retranslateUi
 
 };

@@ -24,7 +24,7 @@
  * text parameter names to parameter numbers. Set default
  * values.
  */
-CbrSettings::CbrSettings() : arrayKeyMult_(1000000) {
+CbrSettings::CbrSettings() : QObject(), arrayKeyMult_(1000000) {
     addProxy(new CbrQtSettingsProxy());
 
     signalMapper = new QSignalMapper(this);
@@ -93,7 +93,7 @@ const CbrSettingsProxy *CbrSettings::proxy() const {
 }
 
 QVariant CbrSettings::get(int key) const {
-	Q_ASSERT(keys.contains(key));
+    Q_ASSERT(keys.contains(key));
     if (!keys.contains(key))
         return QVariant();
 
@@ -107,9 +107,13 @@ bool CbrSettings::keyExists(int key) const {
 }
 
 QVariant CbrSettings::get(int key, int index) {
-    if (!keys.contains(key))
-        return QVariant();
-	return readArrayValue(key, index);
+    QVariant var;
+    if (keys.contains(key))
+        var = readArrayValue(key, index);
+    return var;
+//    if (!keys.contains(key))
+//        return QVariant();
+//	return readArrayValue(key, index);
 
     //QString key_name = getKeyNameWithIndex(keys[key], index);
 
@@ -132,8 +136,8 @@ void CbrSettings::set(int key, const QVariant &val) {
 void CbrSettings::set(int key, int index, const QVariant &val) {
     if (index == -1)
         set(key, val);
-	else
-		writeArrayValue(key, index, val);
+    else
+        writeArrayValue(key, index, val);
 }
 
 void CbrSettings::removeSetting(int ikey) {
@@ -282,9 +286,9 @@ void CbrSettings::appendArrayValue(int ikey, QVariant value) {
 
 void CbrSettings::removeArrayValue(int ikey, QVariant value) {
     QList<QVariant> values = readArray(ikey);
-	const int index = values.indexOf(value);
-	if (index < 0)
-		return;
+    const int index = values.indexOf(value);
+    if (index < 0)
+        return;
     values.removeAt(index);
     writeArray(ikey, values);
 }

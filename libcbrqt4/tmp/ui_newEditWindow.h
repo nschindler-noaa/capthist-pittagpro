@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'newEditWindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.7
+** Created by: Qt User Interface Compiler version 5.12.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -12,8 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -51,40 +49,40 @@ public:
     void setupUi(QMainWindow *newEditWindow)
     {
         if (newEditWindow->objectName().isEmpty())
-            newEditWindow->setObjectName(QStringLiteral("newEditWindow"));
+            newEditWindow->setObjectName(QString::fromUtf8("newEditWindow"));
         newEditWindow->resize(800, 600);
         fileOpenAction = new QAction(newEditWindow);
-        fileOpenAction->setObjectName(QStringLiteral("fileOpenAction"));
+        fileOpenAction->setObjectName(QString::fromUtf8("fileOpenAction"));
         fileSaveAction = new QAction(newEditWindow);
-        fileSaveAction->setObjectName(QStringLiteral("fileSaveAction"));
+        fileSaveAction->setObjectName(QString::fromUtf8("fileSaveAction"));
         fileSave_AsAction = new QAction(newEditWindow);
-        fileSave_AsAction->setObjectName(QStringLiteral("fileSave_AsAction"));
+        fileSave_AsAction->setObjectName(QString::fromUtf8("fileSave_AsAction"));
         filePrintAction = new QAction(newEditWindow);
-        filePrintAction->setObjectName(QStringLiteral("filePrintAction"));
+        filePrintAction->setObjectName(QString::fromUtf8("filePrintAction"));
         fileExitAction = new QAction(newEditWindow);
-        fileExitAction->setObjectName(QStringLiteral("fileExitAction"));
+        fileExitAction->setObjectName(QString::fromUtf8("fileExitAction"));
         editCopyAction = new QAction(newEditWindow);
-        editCopyAction->setObjectName(QStringLiteral("editCopyAction"));
+        editCopyAction->setObjectName(QString::fromUtf8("editCopyAction"));
         editCutAction = new QAction(newEditWindow);
-        editCutAction->setObjectName(QStringLiteral("editCutAction"));
+        editCutAction->setObjectName(QString::fromUtf8("editCutAction"));
         editPasteAction = new QAction(newEditWindow);
-        editPasteAction->setObjectName(QStringLiteral("editPasteAction"));
+        editPasteAction->setObjectName(QString::fromUtf8("editPasteAction"));
         editUndoAction = new QAction(newEditWindow);
-        editUndoAction->setObjectName(QStringLiteral("editUndoAction"));
+        editUndoAction->setObjectName(QString::fromUtf8("editUndoAction"));
         editRedoAction = new QAction(newEditWindow);
-        editRedoAction->setObjectName(QStringLiteral("editRedoAction"));
+        editRedoAction->setObjectName(QString::fromUtf8("editRedoAction"));
         editDeleteAction = new QAction(newEditWindow);
-        editDeleteAction->setObjectName(QStringLiteral("editDeleteAction"));
+        editDeleteAction->setObjectName(QString::fromUtf8("editDeleteAction"));
         editSelect_AllAction = new QAction(newEditWindow);
-        editSelect_AllAction->setObjectName(QStringLiteral("editSelect_AllAction"));
+        editSelect_AllAction->setObjectName(QString::fromUtf8("editSelect_AllAction"));
         centralwidget = new QWidget(newEditWindow);
-        centralwidget->setObjectName(QStringLiteral("centralwidget"));
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout_2 = new QVBoxLayout(centralwidget);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         plainTextEdit = new QPlainTextEdit(centralwidget);
-        plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
+        plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
 
         verticalLayout->addWidget(plainTextEdit);
 
@@ -93,15 +91,15 @@ public:
 
         newEditWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(newEditWindow);
-        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 800, 26));
         menu_File = new QMenu(menubar);
-        menu_File->setObjectName(QStringLiteral("menu_File"));
+        menu_File->setObjectName(QString::fromUtf8("menu_File"));
         menu_Edit = new QMenu(menubar);
-        menu_Edit->setObjectName(QStringLiteral("menu_Edit"));
+        menu_Edit->setObjectName(QString::fromUtf8("menu_Edit"));
         newEditWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(newEditWindow);
-        statusbar->setObjectName(QStringLiteral("statusbar"));
+        statusbar->setObjectName(QString::fromUtf8("statusbar"));
         newEditWindow->setStatusBar(statusbar);
 
         menubar->addAction(menu_File->menuAction());
@@ -129,21 +127,21 @@ public:
 
     void retranslateUi(QMainWindow *newEditWindow)
     {
-        newEditWindow->setWindowTitle(QApplication::translate("newEditWindow", "MainWindow", Q_NULLPTR));
-        fileOpenAction->setText(QApplication::translate("newEditWindow", "&Open", Q_NULLPTR));
-        fileSaveAction->setText(QApplication::translate("newEditWindow", "&Save", Q_NULLPTR));
-        fileSave_AsAction->setText(QApplication::translate("newEditWindow", "Save &As", Q_NULLPTR));
-        filePrintAction->setText(QApplication::translate("newEditWindow", "&Print", Q_NULLPTR));
-        fileExitAction->setText(QApplication::translate("newEditWindow", "E&xit", Q_NULLPTR));
-        editCopyAction->setText(QApplication::translate("newEditWindow", "&Copy", Q_NULLPTR));
-        editCutAction->setText(QApplication::translate("newEditWindow", "Cu&t", Q_NULLPTR));
-        editPasteAction->setText(QApplication::translate("newEditWindow", "&Paste", Q_NULLPTR));
-        editUndoAction->setText(QApplication::translate("newEditWindow", "&Undo", Q_NULLPTR));
-        editRedoAction->setText(QApplication::translate("newEditWindow", "&Redo", Q_NULLPTR));
-        editDeleteAction->setText(QApplication::translate("newEditWindow", "&Delete", Q_NULLPTR));
-        editSelect_AllAction->setText(QApplication::translate("newEditWindow", "Select &All", Q_NULLPTR));
-        menu_File->setTitle(QApplication::translate("newEditWindow", "&File", Q_NULLPTR));
-        menu_Edit->setTitle(QApplication::translate("newEditWindow", "&Edit", Q_NULLPTR));
+        newEditWindow->setWindowTitle(QApplication::translate("newEditWindow", "MainWindow", nullptr));
+        fileOpenAction->setText(QApplication::translate("newEditWindow", "&Open", nullptr));
+        fileSaveAction->setText(QApplication::translate("newEditWindow", "&Save", nullptr));
+        fileSave_AsAction->setText(QApplication::translate("newEditWindow", "Save &As", nullptr));
+        filePrintAction->setText(QApplication::translate("newEditWindow", "&Print", nullptr));
+        fileExitAction->setText(QApplication::translate("newEditWindow", "E&xit", nullptr));
+        editCopyAction->setText(QApplication::translate("newEditWindow", "&Copy", nullptr));
+        editCutAction->setText(QApplication::translate("newEditWindow", "Cu&t", nullptr));
+        editPasteAction->setText(QApplication::translate("newEditWindow", "&Paste", nullptr));
+        editUndoAction->setText(QApplication::translate("newEditWindow", "&Undo", nullptr));
+        editRedoAction->setText(QApplication::translate("newEditWindow", "&Redo", nullptr));
+        editDeleteAction->setText(QApplication::translate("newEditWindow", "&Delete", nullptr));
+        editSelect_AllAction->setText(QApplication::translate("newEditWindow", "Select &All", nullptr));
+        menu_File->setTitle(QApplication::translate("newEditWindow", "&File", nullptr));
+        menu_Edit->setTitle(QApplication::translate("newEditWindow", "&Edit", nullptr));
     } // retranslateUi
 
 };

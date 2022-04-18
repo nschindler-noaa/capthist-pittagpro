@@ -14,32 +14,36 @@
 class PPBatchOutputMaker : public PPOutputMaker
 {
 public:
-	static PPBatchOutputMaker& getInstance()
-	{
-		static PPBatchOutputMaker out;
-		return out;
-	}
+//    PPBatchOutputMaker() : PPOutputMaker() {out = *this;}
+    ~PPBatchOutputMaker() {}
 
-	~PPBatchOutputMaker() {}
+    static PPBatchOutputMaker& getInstance()
+    {
+        static PPBatchOutputMaker out;
+        return out;
+    }
 
-	void write (const std::string& msg, OutputType type = Message)
-	{
+    void write (const std::string& msg, OutputType type = Message)
+    {
         PitProSettings& settings = PitProSettings::getInstance();
+        std::string outstr = ppFormat(msg, type);
         if (type != PPOutputMaker::Warning || settings.isChecked(PitProSettings::Warnings))
-		    std::cerr << ppFormat(msg, type);
-	}
+            std::cerr << outstr;
+        else
+            std::cout << outstr;
+    }
 
 #if 0
-	void setCurrentStep(int num) 
-	  {
-	    PPOutputMaker::setCurrentStep (num);
-	    std::cerr << "\f" << currentStep << "/" << numSteps << endl;
-	  }
+    void setCurrentStep(int num)
+      {
+        PPOutputMaker::setCurrentStep (num);
+        std::cerr << "\f" << currentStep << "/" << numSteps << endl;
+      }
 #endif
 
-
 private:
-	PPBatchOutputMaker() : PPOutputMaker() {}
+//        static PPBatchOutputMaker out;
+    PPBatchOutputMaker() : PPOutputMaker() {}
 
 };
 
